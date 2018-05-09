@@ -1,17 +1,17 @@
 package com.stormbreakers.shinybackend.dao;
 
 public class Puzzle {
-    private long id = 0;
+    private Integer id = 0;
     private String sentence = "[Test] Sentence";
-    private String wordIdentifier = "[Test]";
     private String options = "cool,weird,correct,test";
-    private int correctionOptionIndex = 3;
+    private Integer correctionOptionIndex = 3;
+    private String quoteLink;
 
-    public long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -23,14 +23,6 @@ public class Puzzle {
         this.sentence = sentence;
     }
 
-    public String getWordIdentifier() {
-        return wordIdentifier;
-    }
-
-    public void setWordIdentifier(String wordIdentifier) {
-        this.wordIdentifier = wordIdentifier;
-    }
-
     public String getOptions() {
         return options;
     }
@@ -39,11 +31,15 @@ public class Puzzle {
         this.options = options;
     }
 
-    public int getCorrectionOptionIndex() {
+    public Integer getCorrectionOptionIndex() {
         return correctionOptionIndex;
     }
 
-    public void setCorrectionOptionIndex(int correctionOptionIndex) {
+    public void setCorrectionOptionIndex(Integer correctionOptionIndex) {
         this.correctionOptionIndex = correctionOptionIndex;
+    }
+
+    public void setQuoteLink(String quoteLink) {
+        this.quoteLink = quoteLink;
     }
 }
