@@ -4,7 +4,7 @@ public class Quote {
     private String quoteText = "The first requisite for success is the ability to apply your physical and mental energies to one problem incessantly without growing weary. ";
     private String quoteAuthor = "Thomas Edison";
     private String senderName = "";
-    private String quoteLink = "";
+    private String quoteLink = ""; // create a short checksum to use this as a key in the future?
 
     public String getQuoteText() {
         return quoteText;
