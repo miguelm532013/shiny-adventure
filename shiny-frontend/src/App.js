@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import './Story.js';
+import Game from './Game.js';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Write your story, one word at a time!</h1>
+        <h1>Quote Detective</h1>
+        <hr />
+        <Game />
       </div>
     );
   }
