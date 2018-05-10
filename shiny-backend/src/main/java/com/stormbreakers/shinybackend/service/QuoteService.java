@@ -34,7 +34,9 @@ public class QuoteService {
                     .queryString("format", "json")
                     .queryString("lang", "en")
                     .asJson();
-            System.out.println("Finished with json request for quote");
+
+            JsonNode jsonNode = jsonResponse.getBody();
+            System.out.println(jsonNode.toString());
         } catch (UnirestException e) {
             e.printStackTrace();
         }
